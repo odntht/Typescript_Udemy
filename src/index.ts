@@ -2,10 +2,12 @@ import { User } from './User';
 import { Company } from './Company';
 import { CustomMap } from './CustomMap';
 
-let user = new User();
+const user = new User();
 console.log(user);
 
-let company = new Company();
+const company = new Company();
 console.log(company);
 
-new CustomMap('map');
+const customMap = new CustomMap('map');
+customMap.addMarker(user);
+customMap.addMarker(company);
